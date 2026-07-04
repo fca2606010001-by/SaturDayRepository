@@ -1,7 +1,8 @@
 #include"DxLib.h"
 
-int WINAPI WINMAIN(HINSTANCE, HINSTANCE, LPSTR, int)
+int WINAPI WinMain(HINSTANCE, HINSTANCE, LPSTR, int)
 {
+	
 	ChangeWindowMode(TRUE);
 	ChangeWindowMode(TRUE);
 	DxLib_Init();
@@ -15,7 +16,7 @@ int WINAPI WINMAIN(HINSTANCE, HINSTANCE, LPSTR, int)
 		ClearDrawScreen();
 
 		SetFontSize(120);
-		DrawFormatString(75, 250, fontColor, "Just Do It");
+		DrawFormatString(75, 250, fontColor,"Just Do It");
 
 		ScreenFlip();
 	}

@@ -1,13 +1,14 @@
 #pragma once
-class BackGraund
+
+class Background
 {
 private:
-	// The x pisition of the camera
+
 	int imageHandle;
 public:
 
 	void Init();
 
 	void Draw(float cameraX);
-};
 
+};

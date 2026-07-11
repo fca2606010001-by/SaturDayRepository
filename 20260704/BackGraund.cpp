@@ -1,18 +1,18 @@
 #include "BackGraund.h"
 #include "DxLib.h"
 
-//======================================
-//èâä˙âª
-//======================================
-void BackGraund::Init()
+//=====================================================
+// èâä˙âª
+//=====================================================
+void Background::Init()
 {
 	imageHandle = LoadGraph("img/Background.png");
 }
 
-//======================================
+//=====================================================
 // ï`âÊ
-//======================================
-void BackGraund::Draw(float cameraX)
+//=====================================================
+void Background::Draw(float cameraX)
 {
-	DrawGraph(-(int)(cameraX * 0.5f),0,imageHandle, TRUE);
+	DrawGraph(-(int)(cameraX * 0.5f), 0, imageHandle, TRUE);
 }
